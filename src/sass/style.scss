@@ -1,0 +1,10 @@
+@import './general/base.scss';
+@import './general/variables.scss';
+@import './general/typography.scss';
+@import './components/ui.scss';
+@import './helpers/classes.scss';
+
+.buttons__someText {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}

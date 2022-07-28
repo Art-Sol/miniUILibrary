@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="mt-20 mb-40 text-center">UI library</h1>
+		<!-- Buttons -->
+		<section class="buttons mb-70">
+			<h2 class="buttons__title text-center">Buttons</h2>
+			<div class="buttons__wrapper d-flex f-space-between mb-20">
+				<button id="fadeOut" class="button__btn btn btn-primary m20">Fade out "Some text"</button>
+				<button id="fadeIn" class="button__btn btn btn-dark m20">Fade in "Some text"</button>
+				<button class="button__btn btn btn-warning m20">Does nothing</button>
+				<button class="button__btn btn btn-success m20">Does nothing</button>
+				<button class="button__btn btn btn-danger m20">Does nothing</button>
+			</div>
+			<div class="buttons__someText w-50 block-center p20">
+				<p class="fz-24 text-center">Some text</p>
+			</div>
+		</section>
+		<!-- Dropdawn -->
+		<section class="dropdawnMenu mb-70 text-center">
+			<h2 class="dropdawnMenu__title text-center mb-20 ">Dropdawn</h2>
+			<div class="dropdawnMenu__wrapper dropdown">
+				<button class="dropdawnMenu__button dropdown-toggle btn btn-primary" id="dropdownMenuButton">
+					Dropdawn menu
+				</button>
+				<div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+					<a href="" class="dropdown-item">Action #1</a>
+					<a href="" class="dropdown-item">Action #2</a>
+					<a href="" class="dropdown-item">Action #3</a>
+				</div>
+			</div>
+		</section>
+		<!-- Card -->
+		<section class="cards mb-70">
+			<h2 class="card__title text-center mb-20">Cards</h2>
+			<div class="cards__wrapper d-flex f-space-around ">
+				<div class="card">
+					<img src="https://www.helicopassion.com/images/CH47/autres/CH47925h.jpg" alt="photo" class="card-img">
+					<div class="card-body">
+						<div class="card-title">Card title 1</div>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem, quibusdam assumenda eum dignissimos, dolorem est, provident vitae suscipit magnam iusto ipsum dolore aliquid earum possimus repudiandae? Nihil, vel minima.</p>
+						<a href="#" id="trigger" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="https://www.helicopassion.com/images/CH47/autres/CH47925h.jpg" alt="photo" class="card-img">
+					<div class="card-body">
+						<div class="card-title">Card title 2</div>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem, quibusdam assumenda eum dignissimos, dolorem est, provident vitae suscipit magnam iusto ipsum dolore aliquid earum possimus repudiandae? Nihil, vel minima.</p>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+					</div>
+				</div>
+				<div class="card">
+					<img src="https://www.helicopassion.com/images/CH47/autres/CH47925h.jpg" alt="photo" class="card-img">
+					<div class="card-body">
+						<div class="card-title">Card title 2</div>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora exercitationem, quibusdam assumenda eum dignissimos, dolorem est, provident vitae suscipit magnam iusto ipsum dolore aliquid earum possimus repudiandae? Nihil, vel minima.</p>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Modal -->
+		<section class="modals mb-70">
+			<h2 class="modals__title text-center mb-20">Modals</h2>
+			<div class="modals__wrapper d-flex f-center mb-20">
+				<button  id="trigger" class="button__btn btn btn-success m20" data-toggle="modal" data-target="#exampleModal">Modal JavaScript generated</button>
+				<button class="button__btn btn btn-danger m20" data-toggle="modal" data-target="#exampleModal2">Modal - default HTML generated</button>
+			</div>
+			<div class="modal" id="exampleModal2">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<button class="close" data-close>
+							<span>&times;</span>
+						</button>
+						<div class="modal-header">
+							<div class="modal-title">
+								Modal - default HTML generated
+							</div>
+						</div>
+						<div class="modal-body">
+							Lorem ipsum dolor
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger" data-close>Close</button>
+							<button class="btn btn-success" data-close>Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Tab -->
+		<section class="tabs mb-70">
+			<h2 class="tabs__title text-center mb-20">Tabs</h2>
+			<div class="tabs__tab tab mt-20 block-center">
+				<div class="tab-panel" data-tabpanel>
+					<div class="tab-item tab-item--active">Content 1</div>
+					<div class="tab-item">Content 2</div>
+					<div class="tab-item">Content 3</div>
+				</div>
+				<div class="tab-content tab-content--active">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+				</div>
+				<div class="tab-content">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+				</div>
+				<div class="tab-content">
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus illo eos ut dignissimos, repudiandae aperiam illum ratione ducimus quibusdam aliquam ipsum nesciunt quaerat debitis ad qui quos dolores quae iste?</p>
+				</div>
+			</div>
+		</section>
+		<!-- Accardion -->
+		<section class="accordions mb-70">
+			<h2 class="accordions__title text-center mb-20">Accordion</h2>
+			<div class="accordions__accordion accordion mt-20 block-center">
+				<div class="accordion-head">
+					<span>Collapse first element</span>
+				</div>
+				<div class="accordion-content">
+					<div class="accordion-inner">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolores illo aperiam veritatis suscipit? Qui consequatur voluptatibus hic expedita fugiat natus numquam quae itaque, dicta reprehenderit doloribus, perferendis sed deleniti.
+						dolores illo aperiam veritatis suscipit? Qui consequatur voluptatibus hic expedita fugiat natus numquam quae itaque, dicta reprehenderit doloribus, perferendis sed deleniti.
+					</div>
+				</div>
+				<div class="accordion-head">
+					<span>Collapse second element</span>
+				</div>
+				<div class="accordion-content">
+					<div class="accordion-inner">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis 
+					</div>
+				</div>
+				<div class="accordion-head">
+					<span>Collapse third element</span>
+				</div>
+				<div class="accordion-content">
+					<div class="accordion-inner">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolores illo aperiam veritatis suscipit? Qui consequatur voluptatibus hic expedita fugiat natus numquam quae itaque, dicta reprehenderit doloribus, perferendis sed deleniti.
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolores illo aperiam veritatis suscipit? Qui consequatur voluptatibus hic expedita fugiat natus numquam quae itaque, dicta reprehenderit doloribus, perferendis sed deleniti.
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis dolores illo aperiam veritatis suscipit? Qui consequatur voluptatibus hic expedita fugiat natus numquam quae itaque, dicta reprehenderit doloribus, perferendis sed deleniti.
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Carousel -->
+		<section class="carouselsHtml mb-40">
+			<h2 class="carouselsHtml__title text-center mb-20">Carousel - default HTML generated</h2>
+			<div class="carouselHtml__carousel carousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0"></li>
+					<li data-slide-to="1"></li>
+					<li data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-slides">
+						<div class="carousel-item">
+							<img src="https://on-desktop.com/wps/Cities_____Night_Vancouver_Canada_093043_.jpg" alt="photo0">
+						</div>
+						<div class="carousel-item">
+							<img src="https://vsegda-pomnim.com/uploads/posts/2022-04/1649129708_24-vsegda-pomnim-com-p-priroda-norvegii-foto-37.jpg" alt="photo1">
+						</div>
+						<div class="carousel-item">
+							<img src="https://i.pinimg.com/originals/32/2e/05/322e05d6a52e151ffdda036663d0193b.jpg" alt="photo2">
+						</div>
+					</div>
+				</div>
+				<a href="" class="carousel-prev" data-slide="prev">
+					<span class="carousel-prev-icon">&lt;</span>
+				</a>
+				<a href="" class="carousel-next" data-slide="next">
+					<span class="carousel-next-icon">&gt;</span>
+				</a>
+			</div>
+		</section>
+		<section class="carouselsJs mb-70">
+			<h2 class="carouselsJs__title text-center mb-20">Carousel - JavaScript generated</h2>
+			<div class="carouselsJs__carousel-1 carousel-1"></div>
+		</section>
+	</div>
+   <script src='script.js'></script>
+</body>
+</html>
